@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react"
-import { Button as Component } from "."
+import { Button as Component } from "./Button"
 
 const meta = {
   title: "Atoms/Button",
@@ -9,6 +9,11 @@ const meta = {
 export default meta
 type Story = StoryObj<typeof Component>
 
-export const Primary: Story = {
-  render: () => <Component>Primary Button</Component>,
+export const Button: Story = {
+  render: () => (
+    <div className="flex flex-col items-start">
+      <Component>Primary Button</Component>
+      <Component theme="secondary">Secondary Button</Component>
+    </div>
+  ),
 }
