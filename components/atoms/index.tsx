@@ -1,8 +1,7 @@
-import { ReactNode } from "react"
+import { ComponentWithChildren } from "@/shared/types"
 
-type ButtonProps = {
-  children: ReactNode
-}
+interface ButtonProps extends ComponentWithChildren {}
+
 export function Button({ children }: ButtonProps) {
   return <button className="text-gray-200 bg-yellow-400">{children}</button>
 }
