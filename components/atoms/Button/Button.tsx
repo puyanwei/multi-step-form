@@ -10,6 +10,6 @@ const themes = {
   secondary: "bg-none text-cool-gray py-4",
 }
 
-export function Button({ children, theme = "primary" }: ButtonProps) {
-  return <button className={`${themes[theme]}`}>{children}</button>
+export function Button({ className = "", children, theme = "primary" }: ButtonProps) {
+  return <button className={`${themes[theme]} ${className}}`}>{children}</button>
 }
