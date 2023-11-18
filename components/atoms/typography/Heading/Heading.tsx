@@ -1,12 +1,18 @@
-import { ComponentWithChildren } from "@/shared/types"
+import { HeadingProps, HeadingStyleMap } from "./types"
 
-interface HeadingProps extends ComponentWithChildren {
-  tag: headingTags
-}
+export const headingStyleMap: HeadingStyleMap = {
+  h1: "text-4xl",
+  h2: "text-3xl",
+  h3: "text-2xl",
+  h4: "text-xl",
+} as const
 
-type headingTags = "h1" | "h2" | "h3" | "h4" | "h5" | "h6"
-
-export function Heading({ children, tag }: HeadingProps) {
+export function Heading({ children, tag, className, testId }: HeadingProps) {
   const Tag = tag
-  return <Tag>{children}</Tag>
+  const style = `${headingStyleMap[tag]} ${className}`
+  return (
+    <Tag className={style} data-testid={testId}>
+      {children}
+    </Tag>
+  )
 }
