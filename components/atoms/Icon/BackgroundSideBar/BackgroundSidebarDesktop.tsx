@@ -13,7 +13,7 @@ export function BackgroundSidebarDesktop({
       height="568"
       fill="none"
       viewBox="0 0 274 568"
-      className={className}
+      className={`absolute -z-10 ${className}`}
       data-testid={testId}
     >
       <rect width="274" height="568" fill="#483EFF" rx="10" />

@@ -10,7 +10,7 @@ export function BackgroundSidebarMobile({ className = "", testId }: BackgroundSi
       width="375"
       height="172"
       viewBox="0 0 375 172"
-      className={className}
+      className={`absolute -z-10 ${className}`}
       data-testid={testId}
     >
       <defs>
