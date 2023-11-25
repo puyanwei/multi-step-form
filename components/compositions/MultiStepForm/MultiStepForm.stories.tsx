@@ -13,8 +13,8 @@ type Story = StoryObj<typeof Component>
 
 export const MultiStepForm: Story = {
   render: () => (
-    <Component>
-      <StepBanner data={bannerData} />
-    </Component>
+      <Component>
+        <StepBanner data={bannerData} />
+      </Component>
   ),
 }

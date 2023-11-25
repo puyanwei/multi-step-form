@@ -15,6 +15,9 @@ const config: Config = {
         magnolia: "hsl(217, 100%, 97%)",
         alabaster: "hsl(231, 100%, 99%)",
       },
+      backgroundImage: {
+        'sidebar-lg': "url('/assets/bg-sidebar-desktop.svg')",
+      }
     },
   },
   plugins: [],

@@ -10,7 +10,7 @@ interface Step1Props extends Component {}
 
 export function Step1({ className = "", testId }: Step1Props) {
   return (
-    <Card className={`px-32 py-16 flex flex-col ${className}`} data-testid={testId}>
+    <Card className={`flex flex-col ${className}`} data-testid={testId}>
       <Heading tag="h1">Personal Info</Heading>
       <Text>Please provide your name, email address, and phone number.</Text>
       <div className="flex flex-col space-y-4">

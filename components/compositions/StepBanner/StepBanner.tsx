@@ -1,4 +1,3 @@
-import { BackgroundSidebar } from "@/components/atoms/Icon/BackgroundSideBar/BackgroundSidebar"
 import { StepCircle } from "@/components/molecules/StepCircle/StepCircle"
 import { StepTitle } from "@/components/molecules/StepTitle/StepTitle"
 import { Component } from "@/shared/types"
@@ -14,11 +13,8 @@ interface StepBannerProps extends Component {
 
 export function StepBanner({ className = "", testId, data }: StepBannerProps) {
   return (
-    <div className={`relative ${className}`} data-testid={testId}>
-      <div>
-        <BackgroundSidebar />
-      </div>
-      <div className="flex flex-col p-8 gap-8">
+    <div className={`bg-sidebar-lg bg-no-repeat bg-cover rounded-md ${className}`} data-testid={testId}>
+      <div className="flex flex-col p-8 gap-8 w-full h-full">
         {data.map(({ step, title }) => (
           <div className="flex" key={step}>
             <StepCircle className="mr-4" number={step} />

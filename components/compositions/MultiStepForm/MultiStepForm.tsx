@@ -8,9 +8,9 @@ interface MultiStepFormProps extends ComponentWithChildren {}
 
 export function MultiStepForm({ children, className, testId }: MultiStepFormProps) {
   return (
-    <Card className="flex max-w-3xl" hasShadow>
-      <StepBanner data={bannerData} />
-      <Step1 />
+    <Card className="flex w-[60rem] h-[40rem]" hasShadow>
+      <StepBanner className="flex-grow-1 w-1/3" data={bannerData} />
+      <Step1 className="flex-grow-1 w-2/3" />
     </Card>
   )
 }

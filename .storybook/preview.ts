@@ -10,6 +10,12 @@ const preview: Preview = {
         date: /Date$/,
       },
     },
+    options: {
+      storySort: {
+          order: ['Atoms', 'Molecules', 'Compositions', 'Pages'],
+          locales: 'en-US',
+      }
+  },
   },
 }
 
