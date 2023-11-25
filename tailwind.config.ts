@@ -17,6 +17,9 @@ const config: Config = {
       },
       backgroundImage: {
         'sidebar-lg': "url('/assets/bg-sidebar-desktop.svg')",
+      },
+      fontFamily: {
+        sans: ['var(--font-ubuntu)']
       }
     },
   },
